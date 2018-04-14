@@ -1,73 +1,93 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>About Me</title>
-	<link rel="stylesheet" type="text/css" href= "assets/css/reset.css"> 
-	<link rel="stylesheet" type= "text/css" href= "assets/css/style.css">
+  <title>Glo's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
 
-	<header id="masthead">
-		<div class="container"> 
-			<a href="index.html" id="logo">Glo Austin</a>
-			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</div>
-	</header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Glo Austin</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<div id="main-container" class="container">
-	<section class="main-section">
-		<h1>Portfolio</h1>
-	<div class="work">
-		<img src= "assets/images/ProfilePicture.jpg" class= "photo" alt="hangman">
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>My Portfolio</h1>
+        <p><!-- Some text that represents "Me"... --></p>
+      </div>
+    </div>
 
-		<h3>Hangman</h3>
-	</div>
-	<div class="work">
-		<img src= "assets/images/ProfilePicture.jpg" class= "photo" alt="RPG Game">
+    <div class="container-fluid bg-3 text-center">
+      <h3>Some of my Work</h3>
+      
+      <div class="row">
 
-		<h3>RPG Game</h3>
-	</div>
-	<div class="work">
-		<img src= "assets/images/ProfilePicture.jpg" class= "photo" alt="Trivia Game">
+        <div class="col-sm-3">
+          <h4>Date Night App V1</h4>
+          <a href="https://jenstokes79.github.io/DateNight/"><img src="assets/images/date-night-v1.png" style="width:100%" alt="Image">
+        </div>
 
-		<h3>Trivia Game</h3>
-	</div>
-	<div class="work">
-		<img src= "assets/images/ProfilePicture.jpg" class= "photo" alt="Rutgers Info Widget">
+        <div class="col-sm-3">
+          <h4>Just Store It</h4>
+          <a href="https://fathomless-caverns-95437.herokuapp.com/"><img src="assets/images/just-store-it.png" class="img-responsive" style="width:100%" alt="Image"></a>
+        </div>
 
-		<h3>Rutgers Info Widget</h3>
-	</div>
-	<div class="work">
-		<img src= "assets/images/ProfilePicture.jpg" class= "photo" alt="Rock Paper Scissors">
+        <div class="col-sm-3">
+          <h4>Train Times</h4>
+          <a href="https://g-austin.github.io/Train-Schedule/"><img src="assets/images/train-times.png" class="img-responsive" style="width:100%" alt="Image">
+        </div>
 
-		<h3>Rock Paper Scissors</h3>
-	</div>
-	</section>
+        <div class="col-sm-3">
+          <h4>Strong Women in GIFs</h4>
+          <a href="https://g-austin.github.io/Strong-Women-In-GIFs/"><img src="assets/images/strong-women.png" style="width:100%" alt="Image">
+        </div>
 
+      </div> 
+    </div>
 
+    <!-- Social Media Links-->
 
-	<section class="sidebar">
-		<div id= "connect">
-			<h2> Connect with Me</h2>
-			<img src="assets/images/LinkedinLogo.png" class="social">
-			<img src="assets/images/GitHubLogo.png" class="social">
-			<img src="assets/images/stackoverflow.png" class="social">
-		
-	</section>
+    <!--I want to code this so the container is smaller and in the center-->
+     <div class="container">
+        <div class="panel panel-default">
+          <div class="panel-body">
 
-</div>
+            <div class="text-center">
+              <a href="https://github.com/G-Austin"><img src="assets/images/GitHubLogo.png"></a>
+              <a href="http://www.linkedin.com/in/glo-austin/"><img src="assets/images/LinkedinLogo.png"></a>
+              <a href="http://stackoverflow.com/users/8704578/gaustin"><img src="assets/images/stackoverflow.png"></a>
+            </div>
 
-<footer>
-	<div class="container">
-		&copy: Copyright 2017 Glo Austin
-	</div>
-</footer>
-	
+            <div class="text-center">
+              <p>© 2017 - Site Built By Glo Austin</p>
+            </div>
+
+          </div>
+        </div>
+     </div>
+
 </body>
 </html>

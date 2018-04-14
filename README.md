@@ -1,2 +1,1 @@
-# G-Austin.github.io
-Bio
+# Bootstrap-Portfolio

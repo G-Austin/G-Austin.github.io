@@ -1,55 +1,100 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>About Me</title>
-	<link rel="stylesheet" type="text/css" href= "assets/css/reset.css"> 
-	<link rel="stylesheet" type= "text/css" href= "assets/css/style.css">
+  <title>Glo's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
 
-	<header id="masthead">
-		<div class="container"> 
-			<a href="index.html" id="logo">Glo Austin</a>
-			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</div>
-	</header>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Glo Austin</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="https://docs.google.com/document/d/1jeYoDyRW3RjrhJEsIDyuGy5p5rAXfk7ud8FgT8nn3-w/edit?usp=sharing">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<div id="main-container" class="container">
-	<section class="main-section">
-		<h1>About Me</h1>
+<!-- About panel -->
 
-		<img src= "assets/images/ProfilePicture.jpg" class= "photo">
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h1>About</h1>
+      </div>
+    </div>
+  </div>
 
-		<p>Glo Austin is a front end developer with years of customer service, management, and team experience. Glo has a solid understanding of JavaScript, HTML, CSS, Python...with examples of what can be built.</p>
+  <div class="container">
+    <div class="row" class="profile_photo">
+      <div class="col-md-12" >
+        <div class="col-md-4">
+          <img src="assets/images/HeadshotProfile.jpeg" class="img-rounded image" alt="Profile Picture">
+        </div>
+        <div class="col-md-8" class="about">
+          <p>Web developer with a passion for creating web applications with a seamless user experience.
+            Adept at working with diverse teams to get the job done.
+            Always learning and excited to explore new technologies.
+          </p>
 
-		<p> When Glo is not at work, Glo loves to spend time outside with Sid and Pace, the cutest dogs to ever live on this earth.</p>
+          <p>Glo also enjoys spending time outside riding bikes, and adventuring around in the mountains with the cutest dogs on the planet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	</section>
+<!-- Social Media Links-->
+  <div class="container">
+     <div class="panel panel-default">
+      <div class="panel-body">
+      <div class="text-center">
+        <a href="https://github.com/G-Austin"><img src="assets/images/GitHubLogo.png"></a>
+        <a href="http://www.linkedin.com/in/glo-austin/"><img src="assets/images/LinkedinLogo.png"></a>
+        <a href="http://stackoverflow.com/users/8704578/gaustin"><img src="assets/images/stackoverflow.png"></a>
+      </div>
 
+      <div class="text-center">
+        <p>© 2017 - Site Built By Glo Austin</p>
+      </div>
 
+    </div>
+   </div>
+  <!-- footer -->
+  <!-- <footer class="container-fluid text-center">
+  <p>© 2017 - Site Built By Glo Austin</p>
+  </footer> -->
 
-	<section class="sidebar">
-		<div id="connect">
-			<h2>Connect with Me</h2>
-			<img src="assets/images/LinkedinLogo.png" class="social">
-			<img src="assets/images/GitHubLogo.png" class="social">
-			<img src="assets/images/stackoverflow.png" class="social">
-		
-	</section>
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous">
+</script>
 
-</div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+</script>
 
-<footer>
-	<div class="container">
-		&copy: Copyright 2017 Glo Austin
-	</div>
-</footer>
-	
 </body>
 </html>

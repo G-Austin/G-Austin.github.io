@@ -1,68 +1,122 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>About Me</title>
-	<link rel="stylesheet" type="text/css" href= "assets/css/reset.css"> 
-	<link rel="stylesheet" type= "text/css" href= "assets/css/style.css">
+  <title>Glo's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
+
 <body>
 
-	<header id="masthead">
-		<div class="container"> 
-			<a href="index.html" id="logo">Glo Austin</a>
-			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</div>
-	</header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Glo Austin</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <!-- <li><a href="index.html">About</a></li> -->
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+<br><br>
+<!-- Contact Me content -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form id="contact-form">
+        <div class="form-group center-block">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control contact-input" id="inputName" placeholder="Name" name="name">
+        </div>
+        <div class="form-group center-block">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control contact-input" id="inputEmail" placeholder="Email" name="email">
+        </div>
+        <div class="form-group center-block">
+          <label for="inputMessage">Message</label>
+          <textarea id="inputMessage" class="form-control contact-input" rows="3" placeholder="Your Message" name="message"></textarea>
+        </div>
+        <input type="text" name="_gotcha" class="display-none">
+        <div class="text-center">
+          <button class="btn btn-default" type="submit" id="email-submit-btn" value="Send">
+            Submit
+          </button>
+        </div>
+        <span></span>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+  $('#contact-form').submit(function(event) {
+    var name = document.getElementByID('#inputName');
+    var email = document.getElementByID('#inputEmail');
+    var message = document.getElementByID('#inputMessage');
 
-<div id="main-container" class="container">
-	<section class="main-section">
-		<h1>Contact</h1>
-	
-		<form id="contact-form">
-			<ul>
-				<li>
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name" placeholder="John Smith" required="required">
-				</li>
-				<li>
-					<label for="email">Email</label>
-					<input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">
-				</li>
-				<li>
-					<label for="message">Message</label>
-					<textarea id="message" name="message" required="required"></textarea>
-				</li>
-			</ul>
-			<input type="submit" name="submit">
-		</form>
+    if (!name.value || !email.value || !message.value) { 
+      alertify.error('Please check your entries');
+    
+    } else {
+      $.ajax({
+        url: "https://formspree.io/glo.austin19@gmail.com",
+        method: "POST",
+        data: $(this).serialize(),
+        dataType: 'json'
+      });
+      event.preventDefault();
+      $(this).get(0).reset();
+      alertify.success('Message sent')
+    }
+  });
+</script>
+<br><br>
+<!-- Social Media Links-->
+<div class="row">
+</div>
+<br>
+<div class="container">
+  <div class="panel panel-default">
+   <div class="panel-body">
+    <div class="text-center">
+      <a href="https://github.com/G-Austin"><img src="assets/images/GitHubLogo.png"></a>
+      <a href="http://www.linkedin.com/in/glo-austin/"><img src="assets/images/LinkedinLogo.png"></a>
+      <a href="http://stackoverflow.com/users/8704578/gaustin"><img src="assets/images/stackoverflow.png"></a>
+    </div>
 
+    <div class="text-center">
+      <p>© 2017 - Site Built By Glo Austin</p>
+    </div>
 
-	</section>
-
-
-
-	<section class="sidebar">
-		<div id="connect">
-			<h2> Connect with Me</h2>
-			<img src="assets/images/LinkedinLogo.png" class="social">
-			<img src="assets/images/GitHubLogo.png" class="social">
-			<img src="assets/images/stackoverflow.png" class="social">
-		
-	</section>
-
+   </div>
+ </div>
 </div>
 
-<footer>
-	<div class="container">
-		&copy: Copyright 2017 Glo Austin
-	</div>
-</footer>
-	
+
+
+<!-- <footer class="container-fluid text-center">
+  <p>© 2017 - Site Built By Glo Austin</p>
+</footer> -->
+
 </body>
+
 </html>
