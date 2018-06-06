@@ -5,96 +5,152 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
-
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Glo Austin</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="https://docs.google.com/document/d/1jeYoDyRW3RjrhJEsIDyuGy5p5rAXfk7ud8FgT8nn3-w/edit?usp=sharing">Resume</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#top">About <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+            <a class="nav-item nav-link" href="#footer">Contact Me</a>
+          </div>
+        </div>
+      </nav>
 
 <!-- About panel -->
 
-  <div class="container">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <h1>About</h1>
+  <div id="top" class="container">
+    <div class="row">
+      <div class="col-md-12" >
+        <div class="col-md-12 text-center" id="profile-photo">
+          <img src="assets/images/HeadshotProfile.jpeg" class="img-rounded image" alt="Profile Picture">
+        </div>
       </div>
+
+      <div class="col-sm-3"></div>
+
+        <div class="container-fluid col-sm-6 text-center">
+          <h1>About Me</h1>
+
+          <p>Full Stack Web Developer with 10 years Retail/Retail Management experience and 14 years served in the United States Army Reserve. Proven ability to provide workable solutions to complex problems. Proficient in variety of coding languages like Javascript, HTML, CSS and JSX. Looking to apply my knowledge of web development in a like-minded environment with a dynamic team to ensure technical feasibility while maximizing User’s experience. 
+          </p>
+
+          <p>Glo also enjoys spending time outside riding bikes, and adventuring around in the mountains.</p>
+
+        </div>
+
+      <div class="col-sm-3"></div>
+
+      
     </div>
   </div>
 
-  <div class="container">
-    <div class="row" class="profile_photo">
-      <div class="col-md-12" >
-        <div class="col-md-4">
-          <img src="assets/images/HeadshotProfile.jpeg" class="img-rounded image" alt="Profile Picture">
-        </div>
-        <div class="col-md-8" class="about">
-          <p>Web developer with a passion for creating web applications with a seamless user experience.
-            Adept at working with diverse teams to get the job done.
-            Always learning and excited to explore new technologies.
-          </p>
+  <!--Portfolio-->
+  <div id="portfolio" class="container-fluid bg-3 text-center">
+    <h1>Portfolio</h1>
+    
+    <div class="row">
 
-          <p>Glo also enjoys spending time outside riding bikes, and adventuring around in the mountains with the cutest dogs on the planet.</p>
-        </div>
+      <div class="col-md-3 col-sm-3"></div>
+
+      <div class="col-sm-3" class="img">
+        <h4>Date Night App V1</h4>
+        <a href="https://jenstokes79.github.io/DateNight/"><img src="assets/images/date-night-v1.png" 
+          class="img-responsive" style="width:100%" alt="Image"></a>
       </div>
+
+      <div class="col-sm-3" class="img">
+        <h4>Just Store It</h4>
+        <a href="https://fathomless-caverns-95437.herokuapp.com/"><img src="assets/images/just-store-it.png" class="img-responsive" style="width:100%" alt="Image"></a>
+      </div>
+
+      <div class="col-sm-3"></div>
+
     </div>
+
+    <div class="row">
+
+      <div class="col-sm-3"></div>
+
+      <div class="col-sm-3" class="img">
+        <h4>Train Times</h4>
+        <a href="https://g-austin.github.io/Train-Times/"><img src="assets/images/train-times.png" class="img-responsive" style="width:100%" alt="Image"></a>
+      </div>
+
+      <div class="col-sm-3" class="img">
+        <h4>Strong Women in GIFs</h4>
+        <a href="https://g-austin.github.io/Strong-Women-In-GIFs/"><img src="assets/images/strong-women.png" 
+        class="img-responsive" style="width:100%" alt="Image"></a>
+      </div>
+
+      <div class="col-sm-3"></div>
+
+    </div> 
   </div>
 
 <!-- Social Media Links-->
-  <div class="container">
+  <!-- <div class="container">
      <div class="panel panel-default">
       <div class="panel-body">
-      <div class="text-center">
+        <div class="text-center">
+          <a href="https://github.com/G-Austin"><img src="assets/images/GitHubLogo.png"></a>
+          <a href="http://www.linkedin.com/in/glo-austin/"><img src="assets/images/LinkedinLogo.png"></a>
+          <a href="http://stackoverflow.com/users/8704578/gaustin"><img src="assets/images/stackoverflow.png"></a>
+        </div>
+
+        <div class="text-center">
+          <p>© 2017 - Site Built By Glo Austin</p>
+        </div>
+
+    </div>
+   </div>
+  </div> -->
+
+
+  <nav id="footer" class="navbar bottom navbar-dark bg-dark">
+    <span class="navbar-text"> 
+      <div class="col-lg-4 col-md-4 col-sm-4"></div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <h3>Want to work together?</h3>
+        <p>I'm currently accepting new projects. Please take a few minutes to tell me about yours.</p>
+        <a href="mailto:glo.austin19@gmail.com?Subject=Hello!" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Email Me</a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4"></div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4"></div>  
+      <div class="social-links" class="col-lg-4 col-md-4 col-sm-4">
         <a href="https://github.com/G-Austin"><img src="assets/images/GitHubLogo.png"></a>
         <a href="http://www.linkedin.com/in/glo-austin/"><img src="assets/images/LinkedinLogo.png"></a>
         <a href="http://stackoverflow.com/users/8704578/gaustin"><img src="assets/images/stackoverflow.png"></a>
       </div>
+      <div class="col-lg-4 col-md-4 col-sm-4"></div>
 
-      <div class="text-center">
-        <p>© 2017 - Site Built By Glo Austin</p>
+      <div class="col-lg-4 col-md-4 col-sm-4"></div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <h7>© 2018 - Glo Austin</h7>
       </div>
-
-    </div>
-   </div>
-  <!-- footer -->
-  <!-- <footer class="container-fluid text-center">
-  <p>© 2017 - Site Built By Glo Austin</p>
-  </footer> -->
-
-  <script
-  src="https://code.jquery.com/jquery-1.12.4.js"
-  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-  crossorigin="anonymous"></script>
-<script
-  src="https://code.jquery.com/jquery-1.12.4.js"
+      <div class="col-lg-4 col-md-4 col-sm-4"></div>
+    </span> 
+      <!-- <a class="navbar-brand" href="#">Fixed bottom</a> -->
+  </nav>
+                        
+  <script src="https://code.jquery.com/jquery-1.12.4.js"
   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
   crossorigin="anonymous">
-</script>
+  </script>
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-</script>
-
+  <script src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous">
+  </script>
 </body>
 </html>
